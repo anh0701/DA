@@ -1,4 +1,4 @@
-## Day 5 — Pivot Table
+# Day 5 — Pivot Table
 
 Đây là phần rất quan trọng với Junior Data Analyst vì Pivot giúp bạn trả lời nhanh các câu hỏi kiểu:
 
@@ -6,7 +6,7 @@
 > “Sản phẩm nào bán nhiều nhất?”
 > “North và South khác nhau thế nào?”
 
-### 1. Pivot Table là gì?
+## 1. Pivot Table là gì?
 
 Hiểu đơn giản:
 
@@ -151,7 +151,7 @@ Region = South
 
 ---
 
-# 3. Pivot Chart
+## 3. Pivot Chart
 
 Pivot Table cho bạn **con số**.
 
@@ -188,7 +188,7 @@ DA phải tiếp tục đặt câu hỏi.
 
 ---
 
-# 4. Slicer
+## 4. Slicer
 
 Slicer là phần rất đáng học vì nó làm Dashboard tương tác.
 
@@ -215,7 +215,7 @@ Thay vì mở dropdown Filter, người dùng có nút trực quan để lọc.
 
 ---
 
-# 5. Tư duy quan trọng nhất của Pivot
+## 5. Tư duy quan trọng nhất của Pivot
 
 Đừng học theo kiểu:
 
@@ -271,7 +271,7 @@ Nếu một order có nhiều rows thì `Count of Order ID` **có thể sai**.
 
 ---
 
-# Bài tập Day 5
+## Bài tập Day 5
 
 Dùng dataset này:
 
