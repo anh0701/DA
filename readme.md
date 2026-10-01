@@ -8,3 +8,4 @@
 - Day 4 — IF, IFS, IFERROR, XLOOKUP.
 - Day 5 — Pivot Table
 - Day 6 — Data Cleaning trong Excel
+- Day 7 — Mini Case: Sales Analysis
