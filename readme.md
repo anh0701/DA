@@ -9,3 +9,4 @@
 - Day 5 — Pivot Table
 - Day 6 — Data Cleaning trong Excel
 - Day 7 — Mini Case: Sales Analysis
+- Day 8 — SQL Foundations: SELECT, FROM, WHERE
