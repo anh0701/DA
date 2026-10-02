@@ -24,23 +24,40 @@ VALUES ('O001', '2026-01-01 00:00:00', 'C001', 'North', 20000.00),
 
 -- Task 1: Lấy tất cả dữ liệu từ orders.
 
+SELECT * FROM orders;
+
 -- Task 2: Chỉ lấy: order_id, region, total_amount
+
+SELECT order_id, region, total_amount FROM orders;
 
 -- Task 3: Lấy tất cả orders thuộc North.
 
+SELECT * FROM orders WHERE region = 'North';
+
 -- Task 4: Lấy các orders có: total_amount > 10M
+
+SELECT * FROM orders WHERE total_amount > 10000;
 
 -- Task 5: Lấy các orders: Region = South AND total_amount > 1M
 
+SELECT * FROM orders WHERE region = 'South' AND total_amount > 1000;
+
 -- Task 6: Lấy các orders thuộc: North OR South
 
+SELECT * FROM orders WHERE region = 'South' OR region = 'North';
+
 -- Task 7: Lấy 3 orders có total_amount cao nhất.
+
+SELECT * FROM orders ORDER BY total_amount DESC LIMIT 3;
 
 -- Task 8: Manager hỏi:
 -- 
 -- “Cho tôi 3 đơn hàng có giá trị cao nhất ở North.”
 -- 
 -- Viết một SQL query hoàn chỉnh.
+
+SELECT * FROM orders WHERE region = 'North' ORDER BY total_amount DESC LIMIT 3;
+
 
 -- Task 9: Giải thích sự khác nhau giữa:
 --
@@ -51,6 +68,11 @@ VALUES ('O001', '2026-01-01 00:00:00', 'C001', 'North', 20000.00),
 -- WHERE total_amount > 10000000
 -- 
 -- nếu trong database total_amount được lưu bằng VND.
+
+/*
+ * khác nhau ở điều kiện lọc, lớn hơn 10 thì có thể nhỏ hơn 10000000,
+ * điều kiện > 10 lấy nhiều dữ liệu hơn điều kiện > 10000000
+ */
 
 
 
