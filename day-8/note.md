@@ -496,11 +496,11 @@ Lấy **tất cả dữ liệu** từ orders.
 
 Chỉ lấy:
 
-Văn bản thuần túy
-
-`order_id
+```
+order_id
 region
-total_amount`
+total_amount
+```
 
 ---
 
@@ -514,8 +514,6 @@ Lấy tất cả orders thuộc **North**.
 
 Lấy các orders có:
 
-Văn bản thuần túy
-
 `total_amount > 10M`
 
 ---
@@ -523,8 +521,6 @@ Văn bản thuần túy
 ### Task 5
 
 Lấy các orders:
-
-Văn bản thuần túy
 
 `Region = South
 AND
@@ -535,8 +531,6 @@ total_amount > 1M`
 ### Task 6
 
 Lấy các orders thuộc:
-
-Văn bản thuần túy
 
 `North OR South`
 
@@ -562,15 +556,11 @@ Viết một SQL query hoàn chỉnh.
 
 Giải thích sự khác nhau giữa:
 
-SQL
-
 ```
 WHERE total_amount > 10
 ```
 
 và
-
-SQL
 
 ```
 WHERE total_amount > 10000000

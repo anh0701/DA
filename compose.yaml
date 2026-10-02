@@ -1,0 +1,13 @@
+services:
+  mysql:
+    image: docker.io/mysql:8.2.0
+    container_name: da
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+    ports:
+      - 3306:3306
+    volumes:
+      - da-vol:/var/lib/mysql
+volumes:
+  da-vol:
+    external: true
