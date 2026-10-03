@@ -4,11 +4,11 @@ Từ hôm nay chúng ta chuyển từ **“tính toán được”** sang **“�
 
 Một DA không nên thấy:
 
-Văn bản thuần túy
-
-`North
+```
+North
 north
- NORTH`
+NORTH
+```
 
 rồi lập tức coi chúng là 3 Region khác nhau.
 
@@ -28,8 +28,6 @@ Region của O002 bị thiếu.
 
 Không được tự ý:
 
-Văn bản thuần túy
-
 `blank → North`
 
 vì chưa có cơ sở.
@@ -40,12 +38,12 @@ Cần xác định **business rule** hoặc tìm nguồn dữ liệu khác.
 
 ### Inconsistent text
 
-Văn bản thuần túy
-
-`North
+```
+North
 north
- NORTH
-North`
+NORTH
+North
+```
 
 Có thể về mặt business đều là một Region.
 
@@ -109,36 +107,32 @@ Nhưng trước khi xóa, phải hỏi:
 
 Ví dụ Quantity:
 
-Văn bản thuần túy
-
-`1
+```
+1
 2
 3
--1`
+-1
+```
 
 là number.
 
 Nhưng:
 
-Văn bản thuần túy
-
-`"1"
+```
+"1"
 "2"
-"3"`
+"3"
+```
 
 có thể đang là text.
 
 Hoặc Revenue:
-
-Văn bản thuần túy
 
 `20,000,000`
 
 là số.
 
 Trong khi:
-
-Văn bản thuần túy
 
 `20M`
 
@@ -159,10 +153,10 @@ có thể cho kết quả không như mong muốn.
 
 Giả sử:
 
-Văn bản thuần túy
-
-`A2 = "North"
-A3 = "North "`
+```
+A2 = "North"
+A3 = "North "
+```
 
 Bạn nhìn bằng mắt gần như không nhận ra.
 
@@ -195,8 +189,6 @@ excel
 ## 5. Data Cleaning Workflow
 
 Khi nhận một dataset mới, bạn có thể đi theo thứ tự:
-
-Văn bản thuần túy
 
 ```
 1. Understand the data
@@ -245,8 +237,6 @@ Hãy liệt kê **tất cả data quality issues** mà bạn phát hiện.
 
 Với:
 
-Văn bản thuần túy
-
 `south`
 
 bạn sẽ chuẩn hóa thành South bằng cách nào?
@@ -258,8 +248,6 @@ Viết công thức Excel.
 ### Task 3
 
 Với:
-
-Văn bản thuần túy
 
 `North`
 
@@ -280,8 +268,6 @@ Nếu không, bạn sẽ làm gì trước?
 ### Task 5
 
 O003 có:
-
-Văn bản thuần túy
 
 `Quantity = -1`
 

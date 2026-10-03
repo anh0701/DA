@@ -10,3 +10,4 @@
 - Day 6 — Data Cleaning trong Excel
 - Day 7 — Mini Case: Sales Analysis
 - Day 8 — SQL Foundations: SELECT, FROM, WHERE
+- Day 9 — Aggregate Functions & GROUP BY

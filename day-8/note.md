@@ -37,9 +37,7 @@ Trong Excel, bạn có thể Filter.
 
 Trong SQL:
 
-SQL
-
-```
+```sql
 SELECT *
 FROM orders
 WHERE region = 'North';
@@ -62,9 +60,7 @@ SELECT nói cho database biết:
 
 Ví dụ:
 
-SQL
-
-```
+```sql
 SELECT order_id, region, total_amount
 FROM orders;
 ```
@@ -79,9 +75,7 @@ Kết quả chỉ có:
 
 ### Lấy tất cả columns
 
-SQL
-
-```
+```sql
 SELECT *
 FROM orders;
 ```
@@ -92,7 +86,6 @@ Nhưng khi làm analysis thực tế, không nên lúc nào cũng dùng SELECT *
 
 Nếu chỉ cần:
 
-
 ```
 order_id
 region
@@ -101,9 +94,7 @@ total_amount
 
 thì nên viết:
 
-SQL
-
-```
+```sql
 SELECT order_id, region, total_amount
 FROM orders;
 ```
@@ -118,9 +109,7 @@ FROM xác định:
 
 > **Lấy dữ liệu từ bảng nào?**
 
-SQL
-
-```
+```sql
 SELECT order_id
 FROM orders;
 ```
@@ -131,9 +120,7 @@ Có thể đọc như:
 
 Cấu trúc cơ bản:
 
-SQL
-
-```
+```sql
 SELECT columns
 FROM table;
 ```
@@ -148,9 +135,7 @@ WHERE dùng để:
 
 Ví dụ:
 
-SQL
-
-```
+```sql
 SELECT *
 FROM orders
 WHERE region = 'North';
@@ -166,25 +151,19 @@ Nghĩa là:
 
 ### Bằng
 
-SQL
-
-```
+```sql
 WHERE region = 'North'
 ```
 
 ### Khác
 
-SQL
-
-```
+```sql
 WHERE region <> 'North'
 ```
 
 Có thể gặp:
 
-SQL
-
-```
+```sql
 WHERE region != 'North'
 ```
 
@@ -194,33 +173,25 @@ tùy database.
 
 ### Lớn hơn
 
-SQL
-
-```
+```sql
 WHERE total_amount > 10
 ```
 
 ### Nhỏ hơn
 
-SQL
-
-```
+```sql
 WHERE total_amount < 10
 ```
 
 ### Lớn hơn hoặc bằng
 
-SQL
-
-```
+```sql
 WHERE total_amount >= 10
 ```
 
 ### Nhỏ hơn hoặc bằng
 
-SQL
-
-```
+```sql
 WHERE total_amount <= 10
 ```
 
@@ -232,9 +203,7 @@ WHERE total_amount <= 10
 
 String:
 
-SQL
-
-```
+```sql
 WHERE region = 'North'
 ```
 
@@ -242,9 +211,7 @@ có dấu ' '.
 
 Number:
 
-SQL
-
-```
+```sql
 WHERE total_amount > 10000000
 ```
 
@@ -252,9 +219,7 @@ không có dấu ' '.
 
 Không viết:
 
-SQL
-
-```
+```sql
 WHERE total_amount > '10000000'
 ```
 
@@ -268,9 +233,7 @@ Hãy tập thói quen dùng đúng data type.
 
 Khi cần **nhiều điều kiện cùng đúng**:
 
-SQL
-
-```
+```sql
 SELECT *
 FROM orders
 WHERE region = 'North'
@@ -287,9 +250,7 @@ Nghĩa là:
 
 Khi chỉ cần **một trong các điều kiện đúng**:
 
-SQL
-
-```
+```sql
 SELECT *
 FROM orders
 WHERE region = 'North'
@@ -304,28 +265,24 @@ WHERE region = 'North'
 
 Ví dụ:
 
-SQL
-
-```
+```sql
 WHERE region = 'North'
   AND region = 'South'
 ```
 
 Một row không thể đồng thời có:
 
-Văn bản thuần túy
-
-`region = North
+```
+region = North
 AND
-region = South`
+region = South
+```
 
 → gần như chắc chắn không có kết quả.
 
 Trong khi:
 
-SQL
-
-```
+```sql
 WHERE region = 'North'
    OR region = 'South'
 ```
@@ -340,9 +297,7 @@ Sau khi lấy dữ liệu, bạn có thể sắp xếp.
 
 ### Tăng dần
 
-SQL
-
-```
+```sql
 SELECT *
 FROM orders
 ORDER BY total_amount ASC;
@@ -352,9 +307,7 @@ ASC = ascending.
 
 ### Giảm dần
 
-SQL
-
-```
+```sql
 SELECT *
 FROM orders
 ORDER BY total_amount DESC;
@@ -368,9 +321,7 @@ Ví dụ manager hỏi:
 
 Bạn có thể:
 
-SQL
-
-```
+```sql
 SELECT *
 FROM orders
 ORDER BY total_amount DESC;
@@ -382,9 +333,7 @@ ORDER BY total_amount DESC;
 
 Nếu chỉ muốn lấy một số dòng đầu:
 
-SQL
-
-```
+```sql
 SELECT *
 FROM orders
 ORDER BY total_amount DESC
@@ -419,9 +368,7 @@ Ví dụ Excel:
 
 SQL:
 
-SQL
-
-```
+```sql
 SELECT order_id, region, total_amount
 FROM orders
 WHERE region = 'North'
@@ -439,9 +386,7 @@ LIMIT 3;
 
 SQL có thứ tự **viết** thường là:
 
-SQL
-
-```
+```sql
 SELECT
 FROM
 WHERE
@@ -451,9 +396,7 @@ LIMIT
 
 Ví dụ:
 
-SQL
-
-```
+```sql
 SELECT order_id, region, total_amount
 FROM orders
 WHERE region = 'North'
