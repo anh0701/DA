@@ -12,3 +12,4 @@
 - Day 8 — SQL Foundations: SELECT, FROM, WHERE
 - Day 9 — Aggregate Functions & GROUP BY
 - Day 10 — HAVING + CASE WHEN
+- Day 11 — DISTINCT, IN, LIKE, NULL
