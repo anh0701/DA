@@ -316,8 +316,10 @@ Sử dụng LIKE.
 
 Giả sử có thêm dữ liệu:
 
-`O011 | C011 | NULL | 3M
-O012 | C012 | North | 5M`
+```
+O011 | C011 | NULL | 3M
+O012 | C012 | North | 5M
+```
 
 Viết SQL lấy các order **chưa có Region**.
 
