@@ -10,16 +10,16 @@ CREATE TABLE orders (
 );
 
 INSERT INTO orders (order_id, order_date, customer_id, region, total_amount)
-VALUES ('O001', '2026-01-01 00:00:00', 'C001', 'North', 20000.00),
-		('O002', '2026-01-02 00:00:00', 'C002', 'South', 1000.00),
-		('O003', '2026-01-03 00:00:00', 'C003', 'North', 22000.00),
-		('O004', '2026-01-04 00:00:00', 'C004', 'South', 10000.00),
-		('O005', '2026-01-05 00:00:00', 'C005', 'South', 1000.00),
-		('O006', '2026-01-06 00:00:00', 'C006', 'North', 20000.00),
-		('O007', '2026-01-07 00:00:00', 'C007', 'South', 1500.00),
-		('O008', '2026-01-08 00:00:00', 'C008', 'North', 2000.00),
-		('O009', '2026-01-09 00:00:00', 'C009', 'South', 21000.00),
-		('O010', '2026-01-10 00:00:00', 'C010', 'North', 2500.00)
+VALUES ('O001', '2026-01-01 00:00:00', 'C001', 'North', 20000000.00),
+		('O002', '2026-01-02 00:00:00', 'C002', 'South', 1000000.00),
+		('O003', '2026-01-03 00:00:00', 'C003', 'North', 22000000.00),
+		('O004', '2026-01-04 00:00:00', 'C004', 'South', 10000000.00),
+		('O005', '2026-01-05 00:00:00', 'C005', 'South', 1000000.00),
+		('O006', '2026-01-06 00:00:00', 'C006', 'North', 20000000.00),
+		('O007', '2026-01-07 00:00:00', 'C007', 'South', 1500000.00),
+		('O008', '2026-01-08 00:00:00', 'C008', 'North', 2000000.00),
+		('O009', '2026-01-09 00:00:00', 'C009', 'South', 21000000.00),
+		('O010', '2026-01-10 00:00:00', 'C010', 'North', 2500000.00)
 ;
 
 -- Task 1: Lấy tất cả dữ liệu từ orders.
@@ -36,11 +36,11 @@ SELECT * FROM orders WHERE region = 'North';
 
 -- Task 4: Lấy các orders có: total_amount > 10M
 
-SELECT * FROM orders WHERE total_amount > 10000;
+SELECT * FROM orders WHERE total_amount > 10000000;
 
 -- Task 5: Lấy các orders: Region = South AND total_amount > 1M
 
-SELECT * FROM orders WHERE region = 'South' AND total_amount > 1000;
+SELECT * FROM orders WHERE region = 'South' AND total_amount > 1000000;
 
 -- Task 6: Lấy các orders thuộc: North OR South
 
