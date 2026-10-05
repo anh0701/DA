@@ -13,3 +13,4 @@
 - Day 9 — Aggregate Functions & GROUP BY
 - Day 10 — HAVING + CASE WHEN
 - Day 11 — DISTINCT, IN, LIKE, NULL
+- Day 12 — JOIN
